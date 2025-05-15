@@ -38,4 +38,5 @@ div {
     
     /* Kutu modelini değiştirme */
     box-sizing: border-box; /* width ve height değerlerine padding ve border dahil edilir */
+   ;
 }
