@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Header ve Navigasyon*/
+    header{
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    header h1{
+        margin-bottom: 1rem;
+    }
+    nav ul {
+        display:flex;   
+        list-style: none;
+    }
+    nav ul li{
+margin-right: 1rem;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    nav ul li a:hover{
+        background-color: #34495e;
+    }
+    /* Ana içerik */
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    section{
+        margin-bottom: 3rem;
+    }
+    section h2{
+        color:#2c3e50;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 0.5rem;
+    }
+    .hizmet-kartlari{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    .kart{
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .kart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.kart h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* İletişim Formu */
+.form-grup {
+    margin-bottom: 1rem;
+}
+
+.form-grup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-grup input,
+.form-grup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hizmet-kartlari {
+        grid-template-columns: 1fr;
+    }
+}
+}

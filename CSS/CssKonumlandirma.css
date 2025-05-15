@@ -1,0 +1,127 @@
+/* Display Özelliği */
+div {
+    display: block; /* Blok-seviye element */
+}
+
+span {
+    display: inline; /* Satır içi element */
+}
+
+nav a {
+    display: inline-block; /* Satır içi blok element */
+}
+
+.gizli {
+    display: none; /* Elementi tamamen gizler */
+}
+
+/* Position Özelliği */
+.static {
+    position: static; /* Varsayılan, normal akış */
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    /* Normal konumuna göre kaydırılır */
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    /* En yakın konumlandırılmış üst öğeye göre konumlandırılır */
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    /* Viewport'a göre sabitlenir, kaydırma etkilemez */
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    /* Scroll ile belirli bir konuma geldiğinde sabitlenir */
+}
+/* Float Özelliği */
+.sol {
+    float: left; /* Elementi sola yaslar */
+}
+
+.sag {
+    float: right; /* Elementi sağa yaslar */
+}
+
+.temizle {
+    clear: both; /* Float'ları temizler */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    /* Float içeren kapsayıcı için clearfix */
+}
+/* Flexbox Özelliği */
+.flex-container {
+    display: flex;
+    flex-direction: row; /* row, row-reverse, column, column-reverse */
+    flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+    justify-content: space-between; /* flex-start, flex-end, center, space-around, space-evenly */
+    align-items: center; /* stretch, flex-start, flex-end, center, baseline */
+    align-content: space-around; /* stretch, flex-start, flex-end, center, space-between, space-around */
+    gap: 10px; /* Elemanlar arası boşluk */
+}
+
+.flex-item {
+    flex-grow: 1; /* Büyüme faktörü */
+    flex-shrink: 1; /* Küçülme faktörü */
+    flex-basis: auto; /* Başlangıç boyutu */
+    /* Kısa yol */
+    flex: 1 1 auto;
+    align-self: center; /* Bireysel hizalama */
+    order: 2; /* Sıralama (varsayılan 0) */
+}
+/* Grid Özelliği */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun, her biri eşit genişlikte */
+    grid-template-rows: auto; /* Satır yüksekliği otomatik */
+    gap: 10px; /* Elemanlar arası boşluk */
+        grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-gap: 10px; /* Satır ve sütunlar arası boşluk */
+    justify-items: center; /* Hücre içi yatay hizalama */
+    align-items: center; /* Hücre içi dikey hizalama */
+}
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-item {
+    grid-column: 1 / 3; /* 1'den 3'e kadar sütun kaplar */
+    grid-row: 2 / 4; /* 2'den 4'e kadar satır kaplar */
+    justify-self: start; /* Bireysel yatay hizalama */
+    align-self: end; /* Bireysel dikey hizalama */
+}

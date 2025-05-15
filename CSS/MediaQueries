@@ -1,0 +1,53 @@
+/* Mobil öncelikli yaklaşım (önerilen) */
+/* Önce küçük ekranlar için stil */
+body {
+    font-size: 16px;
+}
+
+/* Tablet boyutu için stil */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Masaüstü boyutu için stil */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Farklı ekran özellikleri için */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    /* Dikey konumda ve 600px'den küçük ekranlar için */
+}
+
+@media print {
+    /* Yazdırma için stil */
+}
+@media screen and (prefers-color-scheme: dark) {
+    /* Karanlık mod için stil */
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    /* Hareket azaltma tercihi için stil */
+}
+@media screen and (hover: hover) {
+    /* Fare ile üzerine gelme durumu için stil */
+}
+@media screen and (hover: none) {
+    /* Fare ile üzerine gelme durumu yoksa stil */
+}
+@media screen and (pointer: coarse) {
+    /* Kalın işaretleme cihazları için stil */
+}
+@media screen and (pointer: fine) {
+    /* İnce işaretleme cihazları için stil */
+}
+@media screen and (min-resolution: 300dpi) {
+    /* Yüksek çözünürlüklü ekranlar için stil */
+}
+@media screen and (max-resolution: 300dpi) {
+    /* Düşük çözünürlüklü ekranlar için stil */
+}
+

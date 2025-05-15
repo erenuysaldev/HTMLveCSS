@@ -1,0 +1,32 @@
+<!-- CSS Temelleri
+CSS (Cascading Style Sheets), HTML elementlerinin nasıl görüntüleneceğini tanımlar.
+CSS Ekleme Yöntemleri
+
+Inline CSS: Doğrudan HTML etiketi içinde kullanılır:   -->
+<h1 style="color: blue; font-size: 24px;">Mavi Başlık</h1>
+<!--2-)Internal CSS: HTML dosyasının <head> bölümünde tanımlanır:-->
+    <head>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+        p {
+            color: gray;
+        }
+    </style>
+</head>
+<!--External CSS: Ayrı bir .css dosyasında tanımlanır ve HTML'ye bağlanır: -->
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- CSS Sözdizimi -->
+seçici {
+    özellik: değer;
+    başka-özellik: başka-değer;
+} Örnek:
+h1 {
+    color: blue;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}

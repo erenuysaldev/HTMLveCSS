@@ -1,0 +1,45 @@
+Sözde Sınıflar ve Elementler
+css/* Durum sözde sınıfları */
+a:hover {
+    color: red; /* fare üzerine geldiğinde */
+}
+
+a:active {
+    color: green; /* tıklama anında */
+}
+
+a:visited {
+    color: purple; /* ziyaret edilmiş bağlantı */
+}
+
+/* Yapısal sözde sınıflar */
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Sözde elementler */
+p::first-letter {
+    font-size: 2em;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+p::before {
+    content: "»";
+    color: red;
+}
+
+p::after {
+    content: "«";
+    color: blue;
+}

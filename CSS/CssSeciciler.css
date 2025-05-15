@@ -1,0 +1,21 @@
+/* Temel Seçiciler */
+/* Element seçici */
+p {
+    color: blue;
+}
+
+/* ID seçici */
+#benzersiz-id {
+    color: red;
+}
+
+/* Class seçici */
+.sinif-adi {
+    color: green;
+}
+
+/* Universal seçici */
+* {
+    margin: 0;
+    padding: 0;
+}

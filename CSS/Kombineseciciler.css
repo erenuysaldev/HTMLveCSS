@@ -1,0 +1,19 @@
+/* Alt öğe seçici */
+div p {
+    color: blue; /* div içindeki tüm p'ler */
+}
+
+/* Doğrudan alt öğe seçici */
+div > p {
+    color: red; /* div'in doğrudan alt öğesi olan p'ler */
+}
+
+/* Bitişik kardeş seçici */
+h1 + p {
+    color: green; /* h1'den hemen sonra gelen p */
+}
+
+/* Genel kardeş seçici */
+h1 ~ p {
+    color: orange; /* h1'den sonra gelen tüm p'ler */
+}

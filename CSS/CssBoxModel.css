@@ -1,0 +1,41 @@
+/* Her HTML elementi bir kutu olarak görüntülenir. Bu kutunun bileşenleri:
+
+İçerik (Content): Metnin veya görselin göründüğü alan
+Dolgu (Padding): İçerik etrafındaki boşluk
+Kenar (Border): Dolgu etrafındaki çizgi
+Marj (Margin): Kutu etrafındaki dış boşluk */
+div {
+    /* İçerik boyutu */
+    width: 300px;
+    height: 200px;
+    
+    /* Dolgu */
+    padding-top: 10px;
+    
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    /* Kısa yol */
+    padding: 10px 20px 10px 20px; /* Yukarı, Sağ, Aşağı, Sol */
+    padding: 10px 20px; /* Yukarı-Aşağı, Sağ-Sol */
+    
+    /* Kenar */
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    /* Kısa yol */
+    border: 2px solid black;
+    
+    /* Marj */
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    /* Kısa yol */
+    margin: 10px 15px 10px 15px;
+    margin: 10px 15px; /* Yukarı-Aşağı, Sağ-Sol */
+    margin: 0 auto; /* Yatay ortalama için */
+    
+    /* Kutu modelini değiştirme */
+    box-sizing: border-box; /* width ve height değerlerine padding ve border dahil edilir */
+}

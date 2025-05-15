@@ -1,0 +1,25 @@
+/* Göreli birimler */
+.container{
+    width: 80%; /* Kapsayıcının genişliğinin %80'i */
+    font-size: 1.2em; /* Üst elementin 1.2 katı */
+    padding: 2rem; /* Kök elementin (genellikle html) 2 katı */
+    margin-top: 2vh; /* Viewport yüksekliğinin %2'si */
+    margin-left: 5vw; /* Viewport genişliğinin %5'i */
+}
+/* CSS Değişkenleri (Custom Properties) */
+:root {
+    --ana-renk: #007bff;
+    --ikinci-renk: #6c757d;
+    --metin-rengi: #333;
+    --temel-padding: 1rem;
+}
+.button {
+    background-color: var(--ana-renk);
+    padding: var(--temel-padding);
+    color: white;
+}
+
+.button-secondary {
+    background-color: var(--ikinci-renk);
+    padding: calc(var(--temel-padding) * 0.5);
+}

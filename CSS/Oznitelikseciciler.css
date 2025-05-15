@@ -1,0 +1,24 @@
+/* Belirli bir özniteliğe sahip elementler */
+a[target] {
+    color: red;
+}
+
+/* Belirli bir öznitelik değerine sahip elementler */
+a[href="https://example.com"] {
+    color: blue;
+}
+
+/* Belirli bir değerle başlayan öznitelikler */
+a[href^="https"] {
+    color: green;
+}
+
+/* Belirli bir değerle biten öznitelikler */
+a[href$=".pdf"] {
+    color: orange;
+}
+
+/* Belirli bir değeri içeren öznitelikler */
+a[href*="example"] {
+    color: purple;
+}
