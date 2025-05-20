@@ -70,3 +70,4 @@ Src veya kaynak özelliği için archive.org'dan "Big Buck Bunny" adlı bir vide
 ```
 Bu örnek ayrıca, videonun ekrana daha iyi sığması için genişliği 620 piksel olarak ayarlamak üzere width özelliğini de kullanıyor.
 
+## freecodecamp
