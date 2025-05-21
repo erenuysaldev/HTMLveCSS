@@ -4,10 +4,10 @@ Semantik, bir dildeki kelimelerin veya ifadelerin anlamıdır. HTML, bir dil old
 
 Bir elementin anlamsal anlamı, o elementin ilettiği özel bilgiyi ifade eder. Örneğin, bir p elementinin anlamsal anlamı, bir metin paragrafıdır:
 
-```<p>
+<p>
     Paris'teki muhteşem tatilimi anlatmama izin ver.
     İhtişamlı Eyfel Kulesi'ni yakından gördüm!
-```</p>
+</p>
 
 Çoğu elementin anlamsal anlamı vardır. div elementi ise anlamsal anlam taşımayan çok az elementten biridir. Peki, neden bu önemli?
 
