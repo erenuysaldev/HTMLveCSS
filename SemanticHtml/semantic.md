@@ -18,3 +18,4 @@ Her şeyden önce, doğru anlamsal HTML kullanmak, ekran okuyucular gibi yardım
 Son olarak, doğru anlamsal elementleri kullanmak, geliştirme deneyiminizi iyileştirebilir. Navigasyon çubuğunuzu bulmak için birçok dosya arasında dolaşmak yerine, nav elementini doğrudan düzenleyebilir ve neyi değiştirdiğinizi rahatlıkla anlayabilirsiniz.
 
 Bu bölüm boyunca, bu konular hakkında daha fazla bilgi edinecek, anlamsal elementlerin nasıl kullanılacağını öğrenecek ve neden anlamsal HTML'in bu kadar önemli olduğunu göreceksiniz.
+## FreeCodeCamp
