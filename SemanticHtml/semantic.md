@@ -4,7 +4,6 @@ Semantik, bir dildeki kelimelerin veya ifadelerin anlamıdır. HTML, bir dil old
 
 Bir elementin anlamsal anlamı, o elementin ilettiği özel bilgiyi ifade eder. Örneğin, bir p elementinin anlamsal anlamı, bir metin paragrafıdır:
 ```
-
 <p>
     Paris'teki muhteşem tatilimi anlatmama izin ver.
     İhtişamlı Eyfel Kulesi'ni yakından gördüm!
